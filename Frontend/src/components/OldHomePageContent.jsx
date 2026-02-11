@@ -1,0 +1,374 @@
+import React from 'react';
+import { FaMicrophone, FaChartLine, FaRobot, FaBrain, FaChartBar, FaBullseye, FaUsers, FaStar, FaCheck, FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF } from 'react-icons/fa';
+
+const OldHomePageContent = () => {
+  return (
+    <>
+      {/* Navigation */}
+      <nav className="navbar">
+        <div className="nav-container">
+          <div className="logo">
+            <div onClick={() => window.location.href = 'index.html'} className="logo-icon">
+              <img src="/img/logo2.png" alt="Logo" className="logo" />
+            </div>
+          </div>
+
+          {/* Nav Links */}
+          <ul className="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="dashboard.html">Sign In</a></li>
+            <li><a href="reg.html" className="btn-nav">Get Started</a></li>
+          </ul>
+
+          {/* Mobile Menu Button */}
+          <div className="mobile-menu-btn">
+            <div className="menu-line"></div>
+            <div className="menu-line"></div>
+            <div className="menu-line"></div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-background">
+          <div className="gradient-circle circle-1"></div>
+          <div className="gradient-circle circle-2"></div>
+          <div className="gradient-circle circle-3"></div>
+          <div className="grid-dots"></div>
+        </div>
+        <div className="hero-content">
+          <div className="hero-badge">
+            <span>AI-Powered Interview Platform</span>
+          </div>
+          <h1 className="hero-title">
+            <span className="title-line">Master Your Next Interview</span>
+          </h1>
+          <p className="hero-description">Practice with AI-generated questions, get real-time feedback, and track your progress.<br />CareerEdge helps you build confidence for your dream job interview.</p>
+          <div className="hero-actions">
+            <a href="reg.html" className="btn-hero">
+              <span>Start Practicing Free</span>
+              <div className="btn-hover-effect"></div>
+              <div className="btn-glow"></div>
+            </a>
+          </div>
+        </div>
+        <div className="hero-visual">
+          <div className="floating-card card-1">
+            <div className="card-content">
+              <FaMicrophone />
+              <h4>Voice Analysis</h4>
+            </div>
+          </div>
+          <div className="floating-card card-2">
+            <div className="card-content">
+              <FaChartLine />
+              <h4>Performance Metrics</h4>
+            </div>
+          </div>
+          <div className="floating-card card-3">
+            <div className="card-content">
+              <FaRobot />
+              <h4>AI Feedback</h4>
+            </div>
+          </div>
+        </div>
+        <div className="scroll-indicator">
+          <div className="scroll-line"></div>
+          <p>Scroll to explore</p>
+        </div>
+      </section>
+
+      {/* Rate Section (Improved) */}
+      <section id="rate" className="rate-section">
+        <div className="metrics1 metrics-extra">
+          <div className="card1 card-extra">
+            <div className="title1">Questions Generated</div>
+            <div className="value1 value-extra glitch1 gradient-text" data-text="10,000+">10,000+</div>
+            <div className="sub1 sub-extra">Auto-crafted interview questions</div>
+          </div>
+
+          <div className="card1 card-extra">
+            <div className="title1">Success Rate</div>
+            <div className="value1 value-extra glitch1 gradient-text" data-text="95%">95%</div>
+            <div className="sub1 sub-extra">User-reported improvement</div>
+          </div>
+
+          <div className="card1 card-extra">
+            <div className="title1">Happy Users</div>
+            <div className="value1 value-extra glitch1 gradient-text" data-text="5,000+">5,000+</div>
+            <div className="sub1 sub-extra">and counting…</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="section features">
+        <div className="section-header">
+          <h2>Everything You Need to Succeed</h2>
+          <p>Our comprehensive platform provides all the tools you need to excel in your next interview</p>
+        </div>
+        <div className="feature-cards">
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="card-icon">
+                  <FaBrain />
+                </div>
+                <h3>AI-Powered Questions</h3>
+              </div>
+              <div className="card-back">
+                <p>Get intelligent, role-specific interview questions generated by advanced AI</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="card-icon">
+                  <FaMicrophone />
+                </div>
+                <h3>Voice + Text Mode</h3>
+              </div>
+              <div className="card-back">
+                <p>Practice with both voice responses and text input for realistic simulation</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="card-icon">
+                  <FaChartBar />
+                </div>
+                <h3>Performance Analytics</h3>
+              </div>
+              <div className="card-back">
+                <p>Track your progress with detailed analytics and improvement suggestions</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="card-icon">
+                  <FaBullseye />
+                </div>
+                <h3>Position-Specific Training</h3>
+              </div>
+              <div className="card-back">
+                <p>Tailored questions for your specific role and industry</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="card-icon">
+                  <FaUsers />
+                </div>
+                <h3>Real-time Feedback</h3>
+              </div>
+              <div className="card-back">
+                <p>Get instant feedback on your answers to improve quickly</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="card-icon">
+                  <FaBrain />
+                </div>
+                <h3>Progress Tracking</h3>
+              </div>
+              <div className="card-back">
+                <p>Monitor your improvement with detailed performance metrics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section (Added) */}
+      <section id="testimonials" className="testimonials-section">
+        <div className="section-header">
+          <h2>What Our Users Say</h2>
+          <p>Hear from professionals who landed their dream jobs with CareerEdge</p>
+        </div>
+        <div className="testimonials-grid">
+          <div className="testimonial-card">
+            <div className="stars">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p className="testimonial-text">"CareerEdge completely transformed my interview preparation. The AI feedback was incredibly accurate and helped me identify my weak spots. I landed my dream job at Google thanks to this platform!"</p>
+            <div className="testimonial-author">
+              <div className="author-avatar">U1</div>
+              <div className="author-info">
+                <h4>User 1</h4>
+                <p>Software Engineer at Google</p>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial-card">
+            <div className="stars">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p className="testimonial-text">"The personalized questions and real-time feedback were game-changers. I went from nervous and unprepared to confident and ready. I aced 3 interviews in a row and got multiple offers!"</p>
+            <div className="testimonial-author">
+              <div className="author-avatar">U2</div>
+              <div className="author-info">
+                <h4>User 2</h4>
+                <p>Product Manager at Amazon</p>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial-card">
+            <div className="stars">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p className="testimonial-text">"As someone who struggled with interview anxiety, CareerEdge gave me the practice and confidence I needed. The performance analytics helped me track my progress. Highly recommend to anyone job hunting!"</p>
+            <div className="testimonial-author">
+              <div className="author-avatar">U3</div>
+              <div className="author-info">
+                <h4>User 3</h4>
+                <p>Data Scientist at Netflix</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="section pricing">
+        <div className="section-header">
+          <h2>Choose Your Plan</h2>
+          <p>Flexible options designed for every stage of your career journey</p>
+        </div>
+        <div className="pricing-cards">
+          <div className="pricing-card">
+            <div className="pricing-header">
+              <h3>Basic Pack</h3>
+              <div className="price">৳200</div>
+              <p className="price-desc">Perfect for getting started</p>
+            </div>
+            <ul className="features-list">
+              <li><FaCheck /> 10 hours of interview practice</li>
+              <li><FaCheck /> AI generated questions</li>
+              <li><FaCheck /> Basic AI feedback and scoring</li>
+              <li><FaCheck /> Voice + text hybrid mode</li>
+              <li><FaCheck /> Basic performance tracking</li>
+              <li><FaCheck /> Use anytime within 30 days</li>
+              <li><FaCheck /> Email support</li>
+            </ul>
+            <a href="#" className="btn-pricing">Get Started</a>
+            <div className="card-hover"></div>
+          </div>
+          <div className="pricing-card featured">
+            <div className="popular-badge">Most Popular</div>
+            <div className="pricing-header">
+              <h3>Standard Pack</h3>
+              <div className="price">৳400</div>
+              <p className="price-desc">Ideal for serious candidates</p>
+            </div>
+            <ul className="features-list">
+              <li><FaCheck /> 20 hours of interview practice</li>
+              <li><FaCheck /> AI generated questions</li>
+              <li><FaCheck /> Advanced AI feedback with insights</li>
+              <li><FaCheck /> Voice + text hybrid mode</li>
+              <li><FaCheck /> Detailed performance analytics</li>
+              <li><FaCheck /> Progress tracking & recommendations</li>
+              <li><FaCheck /> Use anytime within 30 days</li>
+              <li><FaCheck /> Priority email support</li>
+              <li><FaCheck /> Offline simulation mode</li>
+            </ul>
+            <a href="#" className="btn-pricing">Get Started</a>
+            <div className="card-hover"></div>
+          </div>
+          <div className="pricing-card">
+            <div className="pricing-header">
+              <h3>Premium Pack</h3>
+              <div className="price">৳600</div>
+              <p className="price-desc">For comprehensive preparation</p>
+            </div>
+            <ul className="features-list">
+              <li><FaCheck /> 30 hours of interview practice</li>
+              <li><FaCheck /> AI generated questions</li>
+              <li><FaCheck /> Advanced AI with personalized learning</li>
+              <li><FaCheck /> Voice + text hybrid mode</li>
+              <li><FaCheck /> Comprehensive analytics dashboard</li>
+              <li><FaCheck /> Custom question creation</li>
+              <li><FaCheck /> Use anytime within 30 days</li>
+              <li><FaCheck /> Priority support + live chat</li>
+              <li><FaCheck /> Offline simulation mode</li>
+              <li><FaCheck /> Interview scheduling assistant</li>
+              <li><FaCheck /> Export performance reports</li>
+            </ul>
+            <a href="#" className="btn-pricing">Get Started</a>
+            <div className="card-hover"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="footer-content">
+          <div className="footer-brand">
+            <div className="logo">
+              <span>CareerEdge</span>
+            </div>
+            <p>Master your interview skills with AI-powered practice and feedback.</p>
+            <div className="social-links">
+              <a href="#"><FaTwitter /></a>
+              <a href="#"><FaLinkedinIn /></a>
+              <a href="#"><FaInstagram /></a>
+              <a href="#"><FaFacebookF /></a>
+            </div>
+          </div>
+          <div className="footer-links">
+            <div className="link-group">
+              <h4>Product</h4>
+              <a href="#">Features</a>
+              <a href="#">Pricing</a>
+              <a href="#">Use Cases</a>
+              <a href="#">Testimonials</a>
+            </div>
+            <div className="link-group">
+              <h4>Resources</h4>
+              <a href="#">Blog</a>
+              <a href="#">Interview Tips</a>
+              <a href="#">Help Center</a>
+              <a href="#">Tutorials</a>
+            </div>
+            <div className="link-group">
+              <h4>Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; CareerEdge. All rights reserved.</p>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default OldHomePageContent;
